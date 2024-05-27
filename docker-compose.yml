@@ -1,0 +1,30 @@
+version: "3.3"
+
+services:
+  orangehrm:
+    image: orangehrm/orangehrm:latest
+    restart: unless-stopped
+    ports:
+      - "8200:80"
+      - "8443:443"
+    environment:
+      - ORANGEHRM_DATABASE_USER=${ORANGEHRM_DATABASE_USER}
+      - ORANGEHRM_DATABASE_PASSWORD=${ORANGEHRM_DATABASE_PASSWORD}
+      - ORANGEHRM_DATABASE_NAME=${ORANGEHRM_DATABASE_NAME}
+      - PUID=998
+      - PGID=100
+    volumes:
+      - ./orange:/orangehrm
+    depends_on:
+      - mysql
+
+  mysql:
+    image: mysql:5.7
+    restart: unless-stopped
+    ports:
+      - "3306:3306"  # Puertos específicos de la base de datos MySQL
+    volumes:
+      - ./db_orange:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+      - MYSQL_DATABASE=${ORANGEHRM_DATABASE_NAME}
