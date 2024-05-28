@@ -9,15 +9,19 @@
 
 -Clone the repository from:
 
--https://gitlab.i2cat.net/devops/e2e-testing-front-end.git
+```console
+-git clone https://gitlab.i2cat.net/devops/e2e-testing-front-end.git
 
+```
 # Project Structure
+```markdown
 .
 ├── .env
 ├── orange
 │   └── (OrangeHRM data)
 └── db_orange
     └── (MySQL data)
+```
 
 ## Environment Variables
 Create a .env file in the root of the project with the following content:
@@ -45,14 +49,18 @@ Starting the Containers
 To start the OrangeHRM and MySQL containers, run:
 
 
+```console
 -docker-compose up -d
+```
 This command will pull the required images (if not already available) and start the containers in detached mode.
 
 ## Stopping the Containers
 To stop the running containers, run:
 
 
+```console
 -docker-compose down
+```
 
 ## Accessing OrangeHRM
 Once the containers are up and running, you can access OrangeHRM in your web browser at:
