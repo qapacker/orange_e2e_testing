@@ -25,14 +25,20 @@ Create a .env file in the root of the project with the following content:
 makefile
 
 ## OrangeHRM Database Configuration
+
+```markdown
 -ORANGEHRM_DATABASE_HOST=mysql
 -ORANGEHRM_DATABASE_USER=root
 -ORANGEHRM_DATABASE_PASSWORD=aLon65tr0ngPassw0rd!
 -ORANGEHRM_DATABASE_NAME=orangehrm
 
+```
 ## MySQL Configuration
+
+```markdown
 -MYSQL_ROOT_PASSWORD=aLon65tr0ngPassw0rd!
 -MYSQL_DATABASE=orangehrm
+```
 
 ## Usage
 Starting the Containers
