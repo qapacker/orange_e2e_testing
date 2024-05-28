@@ -1,18 +1,17 @@
-OrangeHRM Docker Setup
-This repository provides a Docker Compose configuration to set up and run OrangeHRM with MySQL as the database.
+## OrangeHRM Docker Setup
+-This repository provides a Docker Compose configuration to set up and run OrangeHRM with MySQL as the database.
 
-Prerequisites
-Ensure you have the following installed on your machine:
+## Prerequisites
+-Ensure you have the following installed on your machine:
 
-Docker
-Docker Compose
+-Docker
+-Docker Compose
 
-Clone the repository from:
+-Clone the repository from:
 
 https://gitlab.i2cat.net/devops/e2e-testing-front-end.git
-Project Structure
-kotlin
-Copiar código
+
+# Project Structure
 .
 ├── .env
 ├── orange
@@ -20,7 +19,7 @@ Copiar código
 └── db_orange
     └── (MySQL data)
 
-Environment Variables
+## Environment Variables
 Create a .env file in the root of the project with the following content:
 
 makefile
@@ -42,7 +41,7 @@ To start the OrangeHRM and MySQL containers, run:
 docker-compose up -d
 This command will pull the required images (if not already available) and start the containers in detached mode.
 
-Stopping the Containers
+# Stopping the Containers
 To stop the running containers, run:
 
 
