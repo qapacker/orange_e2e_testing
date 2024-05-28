@@ -26,22 +26,24 @@
 ## Environment Variables
 Create a .env file in the root of the project with the following content:
 
-makefile
+```console
+ touch .env
+```
 
-## OrangeHRM Database Configuration
+## OrangeHRM Database Configuration .env
 
 ```markdown
--ORANGEHRM_DATABASE_HOST=mysql
--ORANGEHRM_DATABASE_USER=root
--ORANGEHRM_DATABASE_PASSWORD=aLon65tr0ngPassw0rd!
--ORANGEHRM_DATABASE_NAME=orangehrm
+ORANGEHRM_DATABASE_HOST=mysql
+ORANGEHRM_DATABASE_USER=root
+ORANGEHRM_DATABASE_PASSWORD=aLon65tr0ngPassw0rd!
+ORANGEHRM_DATABASE_NAME=orangehrm
 
 ```
-## MySQL Configuration
+## MySQL Configuration .env
 
 ```markdown
--MYSQL_ROOT_PASSWORD=aLon65tr0ngPassw0rd!
--MYSQL_DATABASE=orangehrm
+MYSQL_ROOT_PASSWORD=aLon65tr0ngPassw0rd!
+MYSQL_DATABASE=orangehrm
 ```
 
 ## Usage
@@ -50,7 +52,7 @@ To start the OrangeHRM and MySQL containers, run:
 
 
 ```console
--docker-compose up -d
+docker-compose up -d
 ```
 This command will pull the required images (if not already available) and start the containers in detached mode.
 
@@ -59,7 +61,7 @@ To stop the running containers, run:
 
 
 ```console
--docker-compose down
+docker-compose down
 ```
 
 ## Accessing OrangeHRM
