@@ -1,0 +1,24 @@
+# Node.js
+node_modules/
+npm-debug.log*
+
+# Cypress
+cypress/videos/
+cypress/screenshots/
+cypress/reports/
+
+# Environment variables
+.env
+
+# Logs
+*.log
+*.tmp
+*.bak
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Ignore the database directory except for SQL files
+db_orange/*
+!db_orange/*.sql
