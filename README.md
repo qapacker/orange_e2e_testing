@@ -39,11 +39,20 @@ ORANGEHRM_DATABASE_PASSWORD=aLon65tr0ngPassw0rd!
 ORANGEHRM_DATABASE_NAME=orangehrm
 
 ```
+
 ## MySQL Configuration .env
 
 ```markdown
 MYSQL_ROOT_PASSWORD=aLon65tr0ngPassw0rd!
 MYSQL_DATABASE=orangehrm
+```
+
+### Archivo de ejemplo de variables de entorno para Cypress
+
+```markdown
+El archivo `cypress.env.example.json` proporciona un ejemplo de cómo configurar las variables de entorno necesarias para ejecutar tus pruebas en Cypress. Es importante **no** incluir información sensible, como contraseñas reales, en este archivo.
+
+Este archivo actúa como una plantilla para que los desarrolladores configuren sus propias variables de entorno locales. Debes copiar este archivo y renombrarlo como `cypress.env.json` para que Cypress pueda leerlo durante la ejecución de las pruebas.
 ```
 
 ## Usage
