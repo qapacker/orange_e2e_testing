@@ -7,6 +7,9 @@ cypress/videos/
 cypress/screenshots/
 cypress/reports/
 
+# Cypress environment files
+cypress.env.json
+
 # Environment variables
 .env
 
@@ -22,3 +25,4 @@ Thumbs.db
 # Ignore the database directory except for SQL files
 db_orange/*
 !db_orange/*.sql
+cypress.env.json
