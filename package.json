@@ -1,4 +1,17 @@
 {
+  "name": "tu-proyecto",
+  "version": "1.0.0",
+  "description": "Descripción de tu proyecto",
+  "main": "index.js",
+  "scripts": {
+    "test:create": "cypress run --spec 'cypress/e2e/2-CRUD-test/create.cy.js'",
+    "test:update": "cypress run --spec 'cypress/e2e/2-CRUD-test/update.cy.js'",
+    "test:read": "cypress run --spec 'cypress/e2e/2-CRUD-test/read.cy.js'",
+    "test:delete": "cypress run --spec 'cypress/e2e/2-CRUD-test/delete.cy.js'",
+    "test:all": "npm run test:create && npm run test:update && npm run test:read && npm run test:delete"
+  },
+  "author": "Tu Nombre",
+  "license": "MIT",
   "devDependencies": {
     "cypress": "^13.10.0"
   }
