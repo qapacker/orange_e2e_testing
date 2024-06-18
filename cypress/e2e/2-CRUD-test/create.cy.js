@@ -1,3 +1,5 @@
+/// <reference types="cypress" />
+
 describe('Create Employee Test', () => {
     it('should successfully create a new employee', () => {
       cy.visit('/web/index.php/auth/login');
